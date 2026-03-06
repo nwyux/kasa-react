@@ -10,8 +10,6 @@ Application web de location d'appartements entre particuliers développée avec 
 - **Sass** - Préprocesseur CSS pour le styling
 - **Vite** - Build tool rapide et moderne
 
-## 📋 Respect des contraintes techniques
-
 ### React
 ✅ **Découpage en composants modulaires et réutilisables**
 - Header, Footer, Banner, Card, Carousel, Collapse, Rating
@@ -141,10 +139,6 @@ interface Accommodation {
 - **Collapse** : Composant accordion réutilisable
 - **Rating** : Affichage des étoiles de notation
 - **404** : Gestion des erreurs de navigation
-
-## 📝 Notes
-
-⚠️ **Images placeholders** : Les fichiers `/logo.svg`, `/logo-white.svg`, `/home-banner.jpg`, et `/about-banner.jpg` sont des placeholders. Remplacez-les par vos images réelles.
 
 ## 👨‍💻 Développement
 
