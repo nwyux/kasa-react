@@ -1,0 +1,98 @@
+@import '../../styles/main.scss';
+
+.collapse {
+  margin-bottom: 30px;
+
+  &__header {
+    width: 100%;
+    background-color: $primary-color;
+    color: $white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    @media (max-width: 768px) {
+      padding: 7px 12px;
+      border-radius: 5px;
+    }
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 500;
+
+    @media (max-width: 768px) {
+      font-size: 13px;
+    }
+  }
+
+  &__arrow {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+
+    svg {
+      width: 32px;
+      height: 32px;
+
+      @media (max-width: 768px) {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    &--open {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: $background-color;
+    border-radius: 5px;
+
+    &--open {
+      max-height: 1000px;
+      padding: 36px 18px 19px;
+
+      @media (max-width: 768px) {
+        padding: 20px 12px 7px;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      color: $primary-color;
+
+      @media (max-width: 768px) {
+        font-size: 12px;
+      }
+    }
+  }
+
+  &__list {
+    font-size: 18px;
+    line-height: 1.5;
+    color: $primary-color;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+  }
+}

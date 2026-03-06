@@ -1,0 +1,21 @@
+@import '../../styles/main.scss';
+
+.rating {
+  display: flex;
+  gap: 10px;
+
+  &__star {
+    width: 30px;
+    height: 30px;
+    fill: #E3E3E3;
+
+    @media (max-width: 768px) {
+      width: 18px;
+      height: 18px;
+    }
+
+    &--filled {
+      fill: $primary-color;
+    }
+  }
+}

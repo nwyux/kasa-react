@@ -1,0 +1,53 @@
+@import '../../styles/main.scss';
+
+.error404 {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 139px 100px 159px;
+  text-align: center;
+  color: $primary-color;
+
+  @media (max-width: 768px) {
+    padding: 195px 20px 133px;
+  }
+
+  &__title {
+    font-size: 288px;
+    font-weight: 700;
+    margin-bottom: 66px;
+
+    @media (max-width: 768px) {
+      font-size: 96px;
+      margin-bottom: 11px;
+    }
+  }
+
+  &__message {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 182px;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+      margin-bottom: 133px;
+      max-width: 260px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__link {
+    font-size: 18px;
+    color: $primary-color;
+    text-decoration: underline;
+    transition: opacity 0.3s ease;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
