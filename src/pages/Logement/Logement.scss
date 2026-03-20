@@ -1,4 +1,4 @@
-@import '../../styles/main.scss';
+@use '../../styles/main' as *;
 
 .logement {
   max-width: 1440px;
@@ -37,7 +37,7 @@
 
   &__location {
     font-size: 18px;
-    color: $primary-color;
+    color: $text-color;
     margin-bottom: 20px;
 
     @media (max-width: 768px) {

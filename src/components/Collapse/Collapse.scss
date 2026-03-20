@@ -1,7 +1,8 @@
-@import '../../styles/main.scss';
+@use 'sass:color';
+@use '../../styles/main' as *;
 
 .collapse {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 
   &__header {
     width: 100%;
@@ -22,7 +23,7 @@
     }
 
     &:hover {
-      background-color: darken($primary-color, 10%);
+      background-color: color.adjust($primary-color, $lightness: -10%);
     }
   }
 
@@ -58,13 +59,20 @@
   &__content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    padding: 0 18px;
+    opacity: 0;
+    transition: max-height 0.35s ease, padding 0.35s ease, opacity 0.25s ease;
     background-color: $background-color;
     border-radius: 5px;
+
+    @media (max-width: 768px) {
+      padding: 0 12px;
+    }
 
     &--open {
       max-height: 1000px;
       padding: 36px 18px 19px;
+      opacity: 1;
 
       @media (max-width: 768px) {
         padding: 20px 12px 7px;
@@ -72,9 +80,10 @@
     }
 
     p {
+      margin: 0;
       font-size: 18px;
       line-height: 1.5;
-      color: $primary-color;
+      color: $text-color;
 
       @media (max-width: 768px) {
         font-size: 12px;
@@ -83,9 +92,10 @@
   }
 
   &__list {
+    margin: 0;
     font-size: 18px;
     line-height: 1.5;
-    color: $primary-color;
+    color: $text-color;
 
     @media (max-width: 768px) {
       font-size: 12px;
