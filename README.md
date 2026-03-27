@@ -7,7 +7,7 @@ Application web de location d'appartements entre particuliers développée avec 
 - **React 19** - Bibliothèque JavaScript pour construire l'interface utilisateur
 - **TypeScript** - Typage statique pour JavaScript
 - **React Router DOM** - Gestion du routage de l'application
-- **Sass** - Préprocesseur CSS pour le styling
+- **Sass** - Préprocesseur CSS pour le styling (Le style est réalisé avec Sass via la syntaxe SCSS (.scss), qui est la syntaxe officielle la plus courante de Sass.)
 - **Vite** - Build tool rapide et moderne
 
 ### React
